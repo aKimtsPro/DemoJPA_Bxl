@@ -6,6 +6,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
 
+import java.util.List;
+
 public class DemoJPA {
 
     public static void main(String[] args) {
@@ -16,15 +18,13 @@ public class DemoJPA {
         manager.getTransaction().begin();
 
 
-        Section s = new Section(0, "delete me", 1);
+        Section s = new Section(0, "delete me");
         s = manager.merge(s);
 //        manager.flush();
 
         try {
             Query q = manager.createNativeQuery("SELECT COUNT( section_id ) FROM section");
             long nbrSections = (long) q.getSingleResult();
-
-            s.setDelegateId((int)nbrSections);
 
             manager.getTransaction().commit();
         }

@@ -26,7 +26,7 @@ public class Program {
         list.forEach( System.out::println );
 
         // INSERT
-        Section toInsert = new Section( 3, "to delete", null );
+        Section toInsert = new Section( 3, "to delete");
 
         manager.getTransaction().begin();
         manager.persist( toInsert );
@@ -39,7 +39,7 @@ public class Program {
 
         // UPDATE
         manager.getTransaction().begin();
-        s.setDelegateId(25);
+        s.setName("ok");
         manager.getTransaction().commit();
 
 
@@ -48,7 +48,6 @@ public class Program {
         manager.detach(s1);
         s1.setId(9);
         manager.persist(s1);
-        s1.setDelegateId(5);
         Section s2 = manager.merge(s1);
 
         manager.flush(); // ecrit les modifs
