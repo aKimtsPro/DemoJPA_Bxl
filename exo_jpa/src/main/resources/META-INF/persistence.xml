@@ -5,14 +5,11 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://java.sun.com/xml/ns/persistence  http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 >
-    <persistence-unit name="demo-jpa">
-        <class>bstorm.akimts.exo.entity.Market</class>
-        <class>bstorm.akimts.exo.entity.MarketProductId</class>
-        <class>bstorm.akimts.exo.entity.MarketProduct</class>
+    <persistence-unit name="exo-jpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/dbslide"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/marketdb"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
             <property name="jakarta.persistence.jdbc.password" value=""/>
 

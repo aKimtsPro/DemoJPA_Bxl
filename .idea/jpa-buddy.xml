@@ -2,8 +2,8 @@
 <project version="4">
   <component name="JpaBuddyIdeaProjectConfig">
     <option name="defaultUnitInitialized" value="true" />
-    <option name="reverseEngineeringLastDbConnectionId" value="8513d301-aa19-409f-bb69-dbf2dbb1d91f" />
-    <option name="reLastEntityCreationPackage" value="src/main/java/bstorm/akimts/jpa/entities" />
+    <option name="reverseEngineeringLastDbConnectionId" value="97a422d9-97a1-4572-834b-a490fa6bfe5e" />
+    <option name="reLastEntityCreationPackage" value="exo_jpa/src/main/java/bstorm/akimts/exo/entity" />
     <option name="newEntityIdStrategy" />
   </component>
 </project>
